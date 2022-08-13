@@ -1,9 +1,9 @@
 from functools import wraps
 from pyrogram.errors.exceptions.forbidden_403 import ChatWriteForbidden
 from pyrogram.types import Message
-from FallenRobot import pbot as app
-from FallenRobot import DEV_USERS
-from FallenRobot.utils.adminperms import member_permissions
+from CatXGirl import pbot as app
+from CatXGirl import DEV_USERS
+from CatXGirl.utils.adminperms import member_permissions
 
 SUDO = DEV_USERS
 
@@ -25,7 +25,7 @@ async def authorised(func, subFunc2, client, message, *args, **kwargs):
 async def unauthorised(message: Message, permission, subFunc2):
     chatID = message.chat.id
     text = (
-        "You don't have the required permission to perform this action."
+        "You don't have the required permission to perform this action. Join With Me [CatXGirl News](https://t.me/CatXGirlNews) "
         + f"\n**Permission:** __{permission}__"
     )
     try:
