@@ -1,3 +1,6 @@
+# Copy Right By CatXGirl
+# © 2022 RishBroProMax CatXGirl
+
 import socket
 
 from asyncio import get_running_loop
