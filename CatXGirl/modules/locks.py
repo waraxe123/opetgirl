@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import FallenRobot.modules.sql.locks_sql as sql
-from FallenRobot import dispatcher, DRAGONS, LOGGER
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import (
+import CatXGirl.modules.sql.locks_sql as sql
+from CatXGirl import dispatcher, DRAGONS, LOGGER
+from CatXGirl.modules.disable import DisableAbleCommandHandler
+from CatXGirl.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.connection import connected
-from FallenRobot.modules.sql.approve_sql import is_approved
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
+from CatXGirl.modules.log_channel import loggable
+from CatXGirl.modules.connection import connected
+from CatXGirl.modules.sql.approve_sql import is_approved
+from CatXGirl.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
