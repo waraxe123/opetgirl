@@ -1,3 +1,18 @@
+# Config files, logs and stuff
+FallenRobot/modules/helper_funcs/temp.txt
+FallenRobot/elevated_users.json
+FallenRobot/config.py
+FallenRobot/config.ini
+log.txt
+kangsticker.png
+updates.txt
+
+# Session files
+FallenRobot/*.session
+FallenRobot/*.session-journal
+Fallen.session-journal
+*.session
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -127,3 +142,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS code and shit
+*.pyc
+.idea/
+.project
+.pydevproject
+.directory
+.vscode
