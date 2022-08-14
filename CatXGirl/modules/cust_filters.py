@@ -15,25 +15,26 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from FallenRobot import dispatcher, LOGGER, DRAGONS
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.helper_funcs.extraction import extract_text
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.helper_funcs.misc import build_keyboard_parser
-from FallenRobot.modules.helper_funcs.msg_types import get_filter_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+from CatXGirl import dispatcher, LOGGER, DRAGONS
+from CatXGirl.modules.disable import DisableAbleCommandHandler
+from CatXGirl.modules.helper_funcs.handlers import MessageHandlerChecker
+from CatXGirl.modules.helper_funcs.chat_status import user_admin
+from CatXGirl.modules.helper_funcs.extraction import extract_text
+from CatXGirl.modules.helper_funcs.filters import CustomFilters
+from CatXGirl.modules.helper_funcs.misc import build_keyboard_parser
+from CatXGirl.modules.helper_funcs.msg_types import get_filter_type
+from CatXGirl.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from FallenRobot.modules.sql import cust_filters_sql as sql
+from CatXGirl.modules.sql import cust_filters_sql as sql
 
-from FallenRobot.modules.connection import connected
+from CatXGirl.modules.sql import cust_filters_sql as sql
+from CatXGirl.modules.connection import connected
 
-from FallenRobot.modules.helper_funcs.alternate import send_message, typing_action
+from CatXGirl.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
