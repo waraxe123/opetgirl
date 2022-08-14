@@ -7,8 +7,8 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineQueryResultPhoto, InputTextMessageContent,
                             Message)
 
-from FallenMusic import (ASSID, ASSNAME, BOT_ID, BOT_USERNAME, BOT_NAME, SUDO_USERS, app, Ass)
-from FallenMusic.Helpers.Database import (approve_pmpermit, disapprove_pmpermit,
+from CatXRobot import (ASSID, ASSNAME, BOT_ID, BOT_USERNAME, BOT_NAME, SUDO_USERS, app, Ass)
+from CatXRobot.Helpers.Database import (approve_pmpermit, disapprove_pmpermit,
                             is_pmpermit_approved)
 
 
