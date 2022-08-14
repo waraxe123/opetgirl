@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from FallenRobot import telethn
-from FallenRobot.modules.helper_funcs.telethn.chatstatus import (
+from CatXGirl import telethn
+from CatXGirl.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
@@ -15,7 +15,7 @@ async def purge_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.from_id not in [5171347305]:
         await event.reply("Only Admins are allowed to use this command")
         return
 
