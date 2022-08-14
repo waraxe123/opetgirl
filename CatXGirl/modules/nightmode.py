@@ -1,4 +1,4 @@
-from FallenRobot.modules.sql.night_mode_sql import (
+from CatXGirl.modules.sql.night_mode_sql import (
     add_nightmode,
     rmnightmode,
     get_all_chat_id,
@@ -8,8 +8,8 @@ from telethon.tl.types import ChatBannedRights
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from telethon import functions
 from telethon import types
-from FallenRobot.events import register
-from FallenRobot import telethn as tbot
+from CatXGirl.events import register
+from CatXGirl import telethn as tbot
 import os
 
 
@@ -110,7 +110,7 @@ async def job_close():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By Fallen Robot**",
+                "12:00 Am, Group Is Closing Till 6 Am. Night Mode Started ! \n**Powered By CatXGirl Bot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -135,7 +135,7 @@ async def job_open():
         try:
             await tbot.send_message(
                 int(warner.chat_id),
-                "06:00 Am, Group Is Opening.\n**Powered By Fallen Robot**",
+                "06:00 Am, Group Is Opening.\n**Powered By CatXGirl Bot**",
             )
             await tbot(
                 functions.messages.EditChatDefaultBannedRightsRequest(
@@ -160,4 +160,4 @@ __help__ = """
 *Note:* Night Mode chats get Automatically closed at 12 am(IST) and Automatically openned at 6 am(IST) to Prevent Night Spams.
 """
 
-__mod_name__ = "Nɪɢʜᴛ​"
+__mod_name__ = "Nɪɢʜᴛ"
