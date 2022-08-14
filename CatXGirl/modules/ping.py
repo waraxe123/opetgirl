@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from FallenRobot import StartTime, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import sudo_plus
-from FallenRobot.modules.disable import DisableAbleCommandHandler
+from CatXGirl import StartTime, dispatcher
+from CatXGirl.modules.helper_funcs.chat_status import sudo_plus
+from CatXGirl.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
@@ -74,7 +74,7 @@ def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
 
     start_time = time.time()
-    message = msg.reply_text("🏓 ᴘɪɴɢɪɴɢ ʙᴀʙʏ....​")
+    message = msg.reply_text("🏓 ᴘɪɴɢɪɴɢ ʙᴀʙʏ....")
     end_time = time.time()
     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
     uptime = get_readable_time((time.time() - StartTime))
@@ -95,7 +95,7 @@ def pingall(update: Update, context: CallbackContext):
     pinged_list.insert(2, "")
     uptime = get_readable_time((time.time() - StartTime))
 
-    reply_msg = "⏱Ping results are:\n"
+    reply_msg = "Ping results are:\n"
     reply_msg += "\n".join(pinged_list)
     reply_msg += "\n<b>ᴜᴘᴛɪᴍᴇ:</b> <code>{}</code>".format(uptime)
 
