@@ -1,5 +1,5 @@
 import requests
-from FallenRobot import CASH_API_KEY, dispatcher
+from CatXGirl import CASH_API_KEY, dispatcher
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
