@@ -3,7 +3,7 @@ import re
 import os
 import html
 import requests
-import FallenRobot.modules.sql.chatbot_sql as sql
+import CatXGirl.modules.sql.chatbot_sql as sql
 
 from time import sleep
 from telegram import ParseMode
@@ -30,10 +30,10 @@ from telegram.ext import (
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
-from FallenRobot.modules.helper_funcs.filters import CustomFilters
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
-from FallenRobot import dispatcher, updater, SUPPORT_CHAT
-from FallenRobot.modules.log_channel import gloggable
+from CatXGirl.modules.helper_funcs.filters import CustomFilters
+from CatXGirl.modules.helper_funcs.chat_status import user_admin, user_admin_no_reply
+from CatXGirl import dispatcher, updater, SUPPORT_CHAT
+from CatXGirl.modules.log_channel import gloggable
 
 
 @run_async
@@ -138,7 +138,7 @@ def chatbot(update: Update, context: CallbackContext):
             return
         anon = message.text
         bot.send_chat_action(chat_id, action="typing")
-        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/Fallen/Anonymous/message={anon}"
+        url = f"https://kukiapi.xyz/api/apikey=1356469075-KUKIkq4WMg5FV4/CatXGirl/ImRishmika/message={anon}"
         request = requests.get(url)
         results = json.loads(request.text)
         result = f"{results['reply']}"
