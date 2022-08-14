@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from FallenRobot.modules.helper_funcs.msg_types import Types
-from FallenRobot.modules.sql import BASE, SESSION
+from CatXGirl.modules.helper_funcs.msg_types import Types
+from CatXGirl.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first}, how are you?"
@@ -85,6 +85,7 @@ DEFAULT_WELCOME_MESSAGES = [
     "Hi {first}\nThis isn't a strange place, this is my home, it's the people who are strange.",
     "Oh, hey {first} what's the password?",
     "Hey {first}, I know what we're gonna do today",
+    "ආ.. ගැම්මක් තමා වරේම් වරේම් හොද බබා වගේ ඉන්න හොදේ",
     "{first} just joined, be at alert they could be a spy.",
     "{first} joined the group, read by Mark Zuckerberg, CIA and 35 others.",
     "Welcome {first}, watch out for falling monkeys.",
@@ -192,6 +193,7 @@ DEFAULT_GOODBYE_MESSAGES = [
     "Marry and reproduce",
     "Stay asleep",
     "Wake up",
+    "පලයන් අපි අල්ල ගත්තයි අපහු අවොත් මරනවා බල්ලා !!  ",
     "Look to la luna",
     "Steven lives",
     "Meet strangers without prejudice",
