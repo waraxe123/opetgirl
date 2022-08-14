@@ -3,8 +3,8 @@ from datetime import datetime
 
 from pyrogram import filters
 
-from FallenRobot import pbot
-from FallenRobot.helper_extra.dbfun import get_couple, save_couple
+from CatXGirl import pbot
+from CatXGirl.helper_extra.dbfun import get_couple, save_couple
 
 # Date and time
 def dt():
@@ -77,4 +77,4 @@ Choose couples in your chat
  ❍ /couple *:* Choose 2 users and send their name as couples in your chat.
 """
 
-__mod_name__ = "Cᴏᴜᴘʟᴇ​"
+__mod_name__ = "Cᴏᴜᴘʟᴇ"
