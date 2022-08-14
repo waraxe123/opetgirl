@@ -1,0 +1,21 @@
+name: Lets Start CatXGirl
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@master
+        with:
+          find: "and user not in [777000, 5171347305]"
+          replace: "and user not in [777000, 5171347305, 5171347305]"
+      - name: Pull All Updates
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'FallenRobot'
+          commit_options: '--no-verify'
+          repository: .
+          commit_user_name: RishBroproMax
+          commit_user_email: 102808014+RishBroProMax@users.noreply.github.com
+          commit_author: RishBroproMax <102808014+RishBroProMax@users.noreply.github.com>
