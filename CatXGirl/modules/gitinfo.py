@@ -1,8 +1,8 @@
 # © @AnonymousBoy1025
 import aiohttp
 from pyrogram import filters
-from FallenRobot import pbot
-from FallenRobot.pyrogramee.errors import capture_err
+from CatXGirl import pbot
+from CatXGirl.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "Gɪᴛʜᴜʙ"
