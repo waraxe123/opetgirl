@@ -6,9 +6,9 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from FallenRobot import DRAGONS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import (
+from CatXGirl import DRAGONS, dispatcher
+from CatXGirl.modules.disable import DisableAbleCommandHandler
+from CatXGirl.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -17,17 +17,17 @@ from FallenRobot.modules.helper_funcs.chat_status import (
     ADMIN_CACHE,
 )
 
-from FallenRobot.modules.helper_funcs.admin_rights import (
+from CatXGirl.modules.helper_funcs.admin_rights import (
     user_can_changeinfo,
     user_can_promote,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from CatXGirl.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot import SUPPORT_CHAT
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.helper_funcs.alternate import send_message
+from CatXGirl import SUPPORT_CHAT
+from CatXGirl.modules.log_channel import loggable
+from CatXGirl.modules.helper_funcs.alternate import send_message
 
 
 @run_async
@@ -40,7 +40,7 @@ def set_sticker(update: Update, context: CallbackContext):
 
     if user_can_changeinfo(chat, user, context.bot.id) is False:
         return msg.reply_text(
-            "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴩ ɪɴғᴏ ʙᴀʙʏ !"
+            "» ʏᴏᴜ ᴅᴏɴ'ᴛ ʜᴀᴠᴇ ᴩᴇʀᴍɪssɪᴏɴs ᴛᴏ ᴄʜᴀɴɢᴇ ɢʀᴏᴜᴩ ɪɴғᴏ {user_name}!"
         )
 
     if msg.reply_to_message:
@@ -500,7 +500,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴍᴏᴛᴇᴅ ᴀ ᴀᴅᴍɪɴ ɪɴ <b>{chat.title}</b>\n\nᴅᴇᴍᴏᴛᴇᴅ : <b>{mention_html(user_member.user.id, user_member.user.first_name)}</b>\nᴅᴇᴍᴏᴛᴇʀ : {mention_html(user.id, user.first_name)}",
+            f"» sᴜᴄᴄᴇssғᴜʟʟʏ ᴅᴇᴍᴏᴛᴇᴅ ᴀ ᴀᴅᴍɪɴ ɪɴ <b>{chat.title}</b>\n\nᴅᴇᴍᴏᴛᴇᴅ : <b>{mention_html(user_member.user.id, user_member.user.first_name)}</b>\nᴅᴇᴍᴏᴛᴇʀ : {mention_html(user.id, user.first_name)} \n\n Promoted By CatXGirl",
             parse_mode=ParseMode.HTML,
         )
 
