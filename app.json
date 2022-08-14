@@ -1,15 +1,15 @@
 {
-      "name": "Fallen Robot",
+      "name": "Cat X Girl Bot",
       "description": "Telegram Group Management Bot.",
-      "logo": "https://telegra.ph/file/72e135da30a1a349f2844.jpg",
+      "logo": "https://telegra.ph/file/db981389e5f6d1ac73e3d.jpg",
       "keywords": [
          "telegram",
          "sexy",
          "group",
          "manager",
-         "Fallen"
+         "CatXGirl"
       ],   
-   "repository": "https://github.com/AnonymousR1025/FallenRobot",
+   "repository": "https://github.com/RishBropromax/Cat-Girl-Bot",
    "addons": [
       {
          "options": {
@@ -89,7 +89,7 @@
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Fallen Support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "1356469075"
+         "value": "5171347305"
       },
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -141,7 +141,7 @@
       "DONATION_LINK": {
          "description": "Link where you would like to receive donations. If you are a noob, better leave it linking to Anonymous",
          "required": false,
-         "value": "https://t.me/anonymous_was_bot"
+         "value": "https://t.me/ImRishmika_Bot"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -151,6 +151,26 @@
       "description": "Telegraph link of the image which will be shown at start command.",
          "required": true,
          "value": ""
-   }
+      },
+      "CO_OWER": {
+      "description": "Co Ower Telegram ID",
+         "required": true,
+         "value": ""
+      },
+       "GIRL_OR_BOY": {
+      "description": "Girl Or Boy",
+         "required": true,
+         "value": ""
+       },
+       "YOUR_TELEGRAM_USERNAME": {
+      "description": "Your Telegram Username",
+         "required": true,
+         "value": ""
+       },
+       "UPDATES_CHANNEL": {
+      "description": "Updates Channel Username.. With Out @.",
+         "required": true,
+         "value": ""
+      },
    }
 }
