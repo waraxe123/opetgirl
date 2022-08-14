@@ -3,10 +3,10 @@ from pyrogram import filters
 from aiohttp import ClientSession
 from Python_ARQ import ARQ
 
-from FallenRobot import pbot as app
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.permissions import adminsOnly
-from FallenRobot.helper_extra.dbfun import (
+from CatXGirl import pbot as app
+from CatXGirl.utils.errors import capture_err
+from CatXGirl.utils.permissions import adminsOnly
+from CatXGirl.helper_extra.dbfun import (
     alpha_to_int,
     get_karma,
     get_karmas,
@@ -16,7 +16,7 @@ from FallenRobot.helper_extra.dbfun import (
     karma_on,
     update_karma,
 )
-from FallenRobot import arq
+from CatXGirl import arq
 
 regex_upvote = (
     r"^((?i)\+|\+\+|\+1|thx|thanx|thanks|thankyou|love|pro|🖤|❣️|💝|💖|💕|❤|💘|cool|good|👍)$"
