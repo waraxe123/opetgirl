@@ -1,6 +1,6 @@
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot import dispatcher
+from CatXGirl.modules.helper_funcs.chat_status import user_admin
+from CatXGirl.modules.disable import DisableAbleCommandHandler
+from CatXGirl import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
@@ -8,7 +8,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.ext import CallbackContext, Filters, CommandHandler
 
 MARKDOWN_HELP = f"""
-Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
+Markdown is a very powerful formatting tool supported by telegram. CatXGirl has some enhancements, to make sure that \
 saved messages are correctly parsed, and to allow you to create buttons.
 
 • <code>_italic_</code>: wrapping text with '_' will produce italic text
