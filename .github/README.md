@@ -4,7 +4,7 @@
  <h2 align="center"> 
     ʜᴇʏ ᴛʜɪs ɪ m ᴄᴀᴛ ɢɪʀʟ ʙᴏᴛ. ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ ᴜsɪɴɢ ᴘʏʀᴏɢʀᴀᴍ
 </h2>
-<p align="center"><a href="https://github.com/RishBropromax/Cat-Girl-Bot"><img src="https://telegra.ph/file/e92d6e9307c341661a50a.jpg"width="500" height="700"</a></p>
+<p align="center"><a href="https://github.com/RishBropromax/Cat-Girl-Bot"><img src="https://telegra.ph/file/a5cda781d0f763e4a5f7f.jpg"width="500" height="700"</a></p>
  
 <p align="center">
     <a href="https://github.com/RishBropromax/Cat-Girl-Bot"> <img src="https://img.shields.io/github/repo-size/RishBropromax/Cat-Girl-Bot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
