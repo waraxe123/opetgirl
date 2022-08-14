@@ -1,7 +1,7 @@
-from FallenRobot import telethn as tbot
+from CatXGirl import telethn as tbot
 import json
 import requests
-from FallenRobot.events import register
+from CatXGirl.events import register
 from telethon import *
 from telethon.tl import functions
 import os
