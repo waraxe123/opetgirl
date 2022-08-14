@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import FallenRobot.modules.sql.notes_sql as sql
-from FallenRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from FallenRobot.__main__ import DATA_IMPORT
-from FallenRobot.modules.helper_funcs.chat_status import user_admin
-from FallenRobot.modules.helper_funcs.alternate import typing_action
+import CatXGirl.modules.sql.notes_sql as sql
+from CatXGirl import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from CatXGirl.__main__ import DATA_IMPORT
+from CatXGirl.modules.helper_funcs.chat_status import user_admin
+from CatXGirl.modules.helper_funcs.alternate import typing_action
 
 # from FallenRobot.modules.rules import get_rules
-import FallenRobot.modules.sql.rules_sql as rulessql
+import CatXGirl.modules.sql.rules_sql as rulessql
 
 # from FallenRobot.modules.sql import warns_sql as warnssql
-import FallenRobot.modules.sql.blacklist_sql as blacklistsql
-from FallenRobot.modules.sql import disable_sql as disabledsql
+import CatXGirl.modules.sql.blacklist_sql as blacklistsql
+from CatXGirl.modules.sql import disable_sql as disabledsql
 
 # from FallenRobot.modules.sql import cust_filters_sql as filtersql
 # import FallenRobot.modules.sql.welcome_sql as welcsql
-import FallenRobot.modules.sql.locks_sql as locksql
-from FallenRobot.modules.connection import connected
+import CatXGirl.modules.sql.locks_sql as locksql
+from FCatXGirl.modules.connection import connected
 
 
 @run_async
@@ -51,7 +51,7 @@ def import_data(update, context):
             file_info = context.bot.get_file(msg.reply_to_message.document.file_id)
         except BadRequest:
             msg.reply_text(
-                "Try downloading and uploading the file yourself again, This one seem broken to me!"
+                "Try downloading and uploading the file yourself again, This one seem broken to me!  [Report](t.me/CatXGirlSupport)"
             )
             return
 
@@ -98,7 +98,7 @@ def import_data(update, context):
                 mod.__import_data__(str(chat.id), data)
         except Exception:
             msg.reply_text(
-                f"An error occurred while recovering your data. The process failed. If you experience a problem with this, please take it to @{SUPPORT_CHAT}"
+                f"An error occurred while recovering your data. The process failed. If you experience a problem with this, please take it to @CatXGirlSupport"
             )
 
             LOGGER.exception(
@@ -341,7 +341,7 @@ def export_data(update, context):
         pass
     context.bot.sendDocument(
         current_chat_id,
-        document=open("FallenRobot{}.backup".format(chat_id), "rb"),
+        document=open("CatXGirl{}.backup".format(chat_id), "rb"),
         caption="📤*Successfully Exported backup:*\nChat: `{}`\nChat ID: `{}`\nOn: `{}`\n\nNote: This `FallenRobot-Backup` was specially made for notes 📚.".format(
             chat.title, chat_id, tgl
         ),
@@ -349,7 +349,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("FallenRobot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("CatXGirl{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
