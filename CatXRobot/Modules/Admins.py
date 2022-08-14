@@ -10,17 +10,17 @@ from asyncio import QueueEmpty
 from pytgcalls import StreamType
 from pytgcalls.types.input_stream import InputAudioStream, InputStream
 
-from FallenMusic import BOT_NAME, app, db_mem
-from FallenMusic.Cache.admins import AdminRightsCheck
-from FallenMusic.Cache.checker import checker, checkerCB
-from FallenMusic.Helpers.Ytinfo import get_yt_info_id
-from FallenMusic.Helpers.Thumbnails import thumb_init
-from FallenMusic.Helpers.Changers import time_to_seconds
-from FallenMusic.Helpers.PyTgCalls import Queues, Fallen
-from FallenMusic.Helpers.PyTgCalls.Converter import convert
-from FallenMusic.Helpers.PyTgCalls.Downloader import download
-from FallenMusic.Helpers.Inline import primary_markup
-from FallenMusic.Helpers.Database import (is_active_chat, is_music_playing, music_off,
+from CatXRobot import BOT_NAME, app, db_mem
+from CatXRobot.Cache.admins import AdminRightsCheck
+from CatXRobot.Cache.checker import checker, checkerCB
+from CatXRobot.Helpers.Ytinfo import get_yt_info_id
+from CatXRobot.Helpers.Thumbnails import thumb_init
+from CatXRobot.Helpers.Changers import time_to_seconds
+from CatXRobot.Helpers.PyTgCalls import Queues, Fallen
+from CatXRobot.Helpers.PyTgCalls.Converter import convert
+from CatXRobot.Helpers.PyTgCalls.Downloader import download
+from CatXRobot.Helpers.Inline import primary_markup
+from CatXRobot.Helpers.Database import (is_active_chat, is_music_playing, music_off,
                             music_on, remove_active_chat)
 
 
