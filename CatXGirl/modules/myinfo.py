@@ -9,20 +9,20 @@ from datetime import datetime
 import random
 from PIL import Image
 from io import BytesIO
-from FallenRobot import telethn as bot
-from FallenRobot import telethn as tgbot
-from FallenRobot.events import register
-from FallenRobot import dispatcher
+from CatXGirl import telethn as bot
+from CatXGirl import telethn as tgbot
+from CatXGirl.events import register
+from CatXGirl import dispatcher
 
 
 edit_time = 5
-""" =======================FALLEN ROBOT====================== """
-file1 = "https://telegra.ph/file/9a85d0a873e2dd80d278d.jpg"
-file2 = "https://telegra.ph/file/9e7815284031452afa9e5.jpg"
-file3 = "https://telegra.ph/file/dcc5e003287f69acea368.jpg"
+""" =======================CatxGirlT====================== """
+file1 = "https://telegra.ph/file/e92d6e9307c341661a50a.jpg"
+file2 = "https://telegra.ph/file/db981389e5f6d1ac73e3d.jpg"
+file3 = "https://telegra.ph/file/97888764855f1c7ac9e5b.jpg"
 file4 = "https://telegra.ph/file/ed1ce7fee94f46b0f671e.jpg"
 file5 = "https://telegra.ph/file/701028ce085ecfa961a36.jpg"
-""" =======================FALLEN ROBOT====================== """
+""" =======================CatXGirl====================== """
 
 
 @register(pattern="/myinfo")
@@ -71,13 +71,13 @@ async def callback_query_handler(event):
     try:
         boy = event.sender_id
         PRO = await bot.get_entity(boy)
-        LILIE = "POWERED BY 𝝙𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 \n\n"
-        LILIE += f"FIRST NAME : {PRO.first_name} \n"
-        LILIE += f"LAST NAME : {PRO.last_name}\n"
-        LILIE += f"YOU BOT : {PRO.bot} \n"
-        LILIE += f"RESTRICTED : {PRO.restricted} \n"
-        LILIE += f"USER ID : {boy}\n"
-        LILIE += f"USERNAME : {PRO.username}\n"
+        LILIE = "POWERED BY ImRishmika \n\n"
+        LILIE += f"FIRST NAME : </ Rishmika Sandanu[SL]/> \n"
+        LILIE += f"LAST NAME : Not Found\n"
+        LILIE += f"YOU BOT : @ImRishmika_Bot \n"
+        LILIE += f"RESTRICTED : Not Found \n"
+        LILIE += f"USER ID : 5171347305\n"
+        LILIE += f"USERNAME : @ImRishmika\n"
         await event.answer(LILIE, alert=True)
     except Exception as e:
         await event.reply(f"{e}")
