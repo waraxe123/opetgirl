@@ -2,7 +2,7 @@
     ❤️  ᴄᴀᴛ ɢɪʀʟ ʙᴏᴛ  ❤️
 </h1>
  <h2 align="center"> 
-    ʜᴇʏ ✨ ᴛʜɪs ɪm ᴄᴀᴛ ɢɪʀʟ ʙᴏᴛ. ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ + ᴠᴄ ʙᴏᴛ ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ ᴜsɪɴɢ ᴘʏʀᴏɢʀᴀᴍ
+    ʜᴇʏ ᴛʜɪs ɪ m ᴄᴀᴛ ɢɪʀʟ ʙᴏᴛ. ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇʀ ʙᴏᴛ ᴡʀɪᴛᴛᴇɴ ɪɴ ᴘʏᴛʜᴏɴ ᴜsɪɴɢ ᴘʏʀᴏɢʀᴀᴍ
 </h2>
 <p align="center"><a href="https://github.com/RishBropromax/Cat-Girl-Bot"><img src="https://telegra.ph/file/e92d6e9307c341661a50a.jpg"width="500" height="700"</a></p>
  
@@ -14,7 +14,8 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
-> 🌹 Thanks to everyone who Star 🌟, Fork 🍂 Semmy Group Manager's repository 🔥, That is the greatest pleasure have...
+>Cat X Girl Is Powerfull And Fast Bot In Telegram... 🌹 Thanks to everyone who Star 🌟, Fork 🍂 Semmy Group Manager's repository 🔥, That is the greatest pleasure have... <br>
+
 
 # ◇───── BOT Features ─────◇
 
