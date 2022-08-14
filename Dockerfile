@@ -66,10 +66,10 @@ RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/FallenRobot
 RUN git clone https://github.com/AnonymousR1025/FallenRobot /root/FallenRobot
-WORKDIR /root/FallenRobot
+WORKDIR /root/CatXGirl
 
 #Copy config file to /root/FallenRobot/FallenRobot
-COPY ./FallenRobot/sample_config.py ./FallenRobot/config.py* /root/FallenRobot/FallenRobot/
+COPY ./CatXGirl/sample_config.py ./CatXGirl/config.py* /root/CatXGirl/CatXGirl/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","FallenRobot"]
+CMD ["python3","-m","CatXGirl"]
