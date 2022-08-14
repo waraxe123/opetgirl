@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 import urllib
-from FallenRobot import telethn as tbot
+from CatXGirl import telethn as tbot
 import glob
 import io
 import os
@@ -284,5 +284,5 @@ __help__ = """
  ❍ /app <appname>*:* Searches for an app in Play Store and returns its details.
  ❍ /reverse: Does a reverse image search of the media which it was replied to.
  ❍ Anonymous <query>*:* Fallen answers the query
-  💡Ex: `Anonymous where is India?`
+  💡Ex: `ImRishmika where is Sri Lanka?`
 """
