@@ -3,8 +3,8 @@ from PIL import Image
 from datetime import datetime
 
 from telethon import events
-from FallenRobot.events import register
-from FallenRobot import telethn as tbot
+from CatXGirl.events import register
+from CatXGirl import telethn as tbot
 from telegraph import Telegraph, upload_file, exceptions
 
 
