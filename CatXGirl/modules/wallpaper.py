@@ -3,7 +3,7 @@ import io
 import requests
 from requests import get
 from pyrogram.types import Message
-from FallenRobot import pbot, dispatcher, SUPPORT_CHAT
+from CatXGirl import pbot, dispatcher, SUPPORT_CHAT
 from bs4 import *
 from pyrogram import filters
 from PIL import Image
@@ -49,7 +49,7 @@ async def wall(client, message):
         caption = f"""
 💘 ᴡᴀʟʟᴩᴀᴩᴇʀ ɢᴇɴᴇʀᴀᴛᴇᴅ sᴜᴄᴄᴇssғᴜʟʟʏ 
 
-✨ **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ :** [{dispatcher.bot.first_name}](https://t.me/{dispatcher.bot.username})
+✨ **ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ :** [CatxGirl](https://t.me/CatXGirlNews)
 🥀 **ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ :** {message.from_user.mention}
 ❄ **ᴅᴏᴡɴʟᴏᴀᴅ :** `{murl}`
 """
