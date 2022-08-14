@@ -1,7 +1,7 @@
 import speedtest
-from FallenRobot import DEV_USERS, dispatcher
-from FallenRobot.modules.disable import DisableAbleCommandHandler
-from FallenRobot.modules.helper_funcs.chat_status import dev_plus
+from CatXGirl import DEV_USERS, dispatcher
+from CatXGirl.modules.disable import DisableAbleCommandHandler
+from CatXGirl.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
