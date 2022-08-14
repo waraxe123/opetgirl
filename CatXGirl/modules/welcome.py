@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import FallenRobot.modules.sql.welcome_sql as sql
-import FallenRobot
-from FallenRobot import (
+import CatXGirl.modules.sql.welcome_sql as sql
+import CatXGirl
+from CatXGirl import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -18,18 +18,18 @@ from FallenRobot import (
     dispatcher,
     JOIN_LOGGER,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from CatXGirl.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from FallenRobot.modules.helper_funcs.msg_types import get_welcome_type
-from FallenRobot.modules.helper_funcs.string_handling import (
+from CatXGirl.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from CatXGirl.modules.helper_funcs.msg_types import get_welcome_type
+from CatXGirl.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql.global_bans_sql import is_user_gbanned
+from CatXGirl.modules.log_channel import loggable
+from CatXGirl.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -188,7 +188,7 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
+                    f"#OWER_JOINED\n"
                     f"Bot Owner just joined the group"
                 )
                 continue
@@ -201,7 +201,7 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
+                    f"#DEV_JOINED\n"
                     f"Bot Dev just joined the group"
                 )
                 continue
@@ -214,7 +214,7 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
+                    f"#SUDO_JOINED\n"
                     f"Bot Sudo just joined the group"
                 )
                 continue
@@ -227,7 +227,7 @@ def new_member(update: Update, context: CallbackContext):
                 )
                 welcome_log = (
                     f"{html.escape(chat.title)}\n"
-                    f"#USER_JOINED\n"
+                    f"#SUPPORT_JOINED\n"
                     f"Bot Support just joined the group"
                 )
                 continue
@@ -287,7 +287,7 @@ def new_member(update: Update, context: CallbackContext):
                         parse_mode=ParseMode.HTML,
                     )
                 update.effective_message.reply_text(
-                    "Watashi ga kita!", reply_to_message_id=reply
+                    "He he he he", reply_to_message_id=reply
                 )
                 continue
 
