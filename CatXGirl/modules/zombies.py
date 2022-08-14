@@ -6,7 +6,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
-from FallenRobot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
+from CatXGirl import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
 
 # =================== CONSTANT ===================
 
@@ -72,7 +72,7 @@ async def rm_deletedacc(show):
     creator = chat.creator
     if not admin and not creator:
         return await show.reply("**Sorry you're not admin!**")
-    memek = await show.reply("`Fu*king deleted accounts...`")
+    memek = await show.reply("`Fucking deleted accounts...`")
     del_u = 0
     del_a = 0
     async for user in telethn.iter_participants(show.chat_id):
