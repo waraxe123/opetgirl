@@ -1,9 +1,9 @@
 import html
 
-from FallenRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from FallenRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from FallenRobot.modules.log_channel import loggable
-from FallenRobot.modules.sql import reporting_sql as sql
+from CatXGirl import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from CatXGirl.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from CatXGirl.modules.log_channel import loggable
+from CatXGirl.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -285,7 +285,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "Rᴇᴘᴏʀᴛs​"
+__mod_name__ = "Rᴇᴘᴏʀᴛs"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
