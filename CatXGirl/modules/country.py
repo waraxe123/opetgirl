@@ -7,8 +7,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from telethon.utils import get_input_location
 
-from FallenRobot import telethn as borg, dispatcher
-from FallenRobot.events import register
+from CatXGirl import telethn as borg, dispatcher
+from CatXGirl.events import register
 
 
 @register(pattern="^/country (.*)")
@@ -103,7 +103,7 @@ async def msg(event):
 <b>Top Level Domain :</b> {lanester}
 <b>Wikipedia :</b> {wiki}
 
-<u>Information Gathered By {dispatcher.bot.first_name}</u>
+<u>Information Gathered By CatxGirl Bot</u>
 """
 
     await borg.send_message(
