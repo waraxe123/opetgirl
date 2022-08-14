@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import FallenRobot.modules.sql.global_bans_sql as sql
-from FallenRobot.modules.sql.users_sql import get_user_com_chats
-from FallenRobot import (
+import CatXGirl.modules.sql.global_bans_sql as sql
+from CatXGirl.modules.sql.users_sql import get_user_com_chats
+from CatXGirl import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -28,16 +28,16 @@ from FallenRobot import (
     WOLVES,
     dispatcher,
 )
-from FallenRobot.modules.helper_funcs.chat_status import (
+from CatXGirl.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from FallenRobot.modules.helper_funcs.extraction import (
+from CatXGirl.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from FallenRobot.modules.helper_funcs.misc import send_to_list
+from CatXGirl.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -531,7 +531,7 @@ dispatcher.add_handler(UNGBAN_HANDLER)
 dispatcher.add_handler(GBAN_LIST)
 dispatcher.add_handler(GBAN_STATUS)
 
-__mod_name__ = "Aɴᴛɪ-Sᴘᴀᴍ​"
+__mod_name__ = "Aɴᴛɪ-Sᴘᴀᴍ"
 __handlers__ = [GBAN_HANDLER, UNGBAN_HANDLER, GBAN_LIST, GBAN_STATUS]
 
 if STRICT_GBAN:  # enforce GBANS if this is set
