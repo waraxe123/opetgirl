@@ -7,10 +7,10 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from FallenRobot import aiohttpsession as session
-from FallenRobot import pbot as app
-from FallenRobot.utils.errors import capture_err
-from FallenRobot.utils.pastebin import paste
+from CatXGirl import aiohttpsession as session
+from CatXGirl import pbot as app
+from CatXGirl.utils.errors import capture_err
+from CatXGirl.utils.pastebin import paste
 
 pattern = re.compile(r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$")
 
@@ -62,7 +62,7 @@ async def paste_func(_, message):
     return await m.edit(link)
 
 
-__mod_name__ = "Pᴀsᴛᴇ​"
+__mod_name__ = "Pᴀsᴛᴇ"
 __help__ = """
  Pastes the given file and shows you the result
 
