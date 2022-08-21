@@ -25,7 +25,9 @@
 - Force Subscribe 
 - Antiflood
 - Locks
-- Image Editer
+- Google Translater
+- Covid News
+- Tag Alerts 
 - BlackList
 - SQL + Mongodb Databases
 - Logo Generated
