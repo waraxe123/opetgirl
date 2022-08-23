@@ -49,7 +49,7 @@
 
 # 🏃‍ Easy Deploy 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/Cat-Girl-Bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/Cat-X-Girl-Bot.git)
 
 ## Devs & Contributors
 
