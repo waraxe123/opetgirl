@@ -55,7 +55,7 @@
 
 ### <a href="https://github.com/RishbroPromax"/>Rishmika Sandanu</a> 
 ### <a href="https://github.com/iSamrt-boi"/>Malitha Mihiranga</a>
-
+### <a href="https://github.com/MaxSupun"/>Max Supun</a>
 
 > 🌷 Sorry Bro My Bot is Not Create On Telegram.. I Think Make This Bot
 
