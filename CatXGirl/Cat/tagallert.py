@@ -181,10 +181,7 @@ async def mentioned_alert(client, message):
         return message.continue_propagation()
 
     
-
-__MODULE__ = Tagalert
-
-__HELP__ = """
+    __HELP__ = """
 
 Too many mentions.. Cant you manage them all alone..
 
@@ -194,7 +191,7 @@ Here is the solution
 
 If you are tagged/mentioned in a group where Rose is present
 
-Semmy will notify it to you via private message after enabling tag alerts
+Cat X Girl will notify it to you via private message after enabling tag alerts
 
 
 
@@ -208,7 +205,7 @@ Semmy will notify it to you via private message after enabling tag alerts
 
 **Example:**
 
-If you are mentioned in a group Rose will tell you who mentioned you, 
+If you are mentioned in a group Cat X Gilr will tell you who mentioned you, 
 
 message that you are tagged in and which group is that.
 
