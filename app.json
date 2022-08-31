@@ -171,6 +171,6 @@
       "description": "Updates Channel Username.. With Out @.",
          "required": true,
          "value": ""
-      },
+      }
    }
 }
