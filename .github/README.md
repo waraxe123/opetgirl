@@ -51,6 +51,8 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RishBropromax/Cat-X-Girl-Bot.git)
 
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template/Pt6tq_?referralCode=TRueS0)
+
 ## Devs & Contributors
 
 ### <a href="https://github.com/RishbroPromax"/>Rishmika Sandanu</a> 
