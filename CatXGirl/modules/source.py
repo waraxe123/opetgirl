@@ -7,7 +7,7 @@ from pyrogram import filters
 from CatXGirl import pbot as client, dispatcher, OWNER_USERNAME
 
 
-ANON = "https://telegra.ph/file/97888764855f1c7ac9e5b.jpg"
+ANON = "https://graph.org/file/15eef9418be9b9011c0ec.jpg"
 
 
 @client.on_message(filters.command(["repo", "source"]))
@@ -16,7 +16,7 @@ async def repo(client, message):
         photo=ANON,
         caption=f"""**ʜᴇʏ {message.from_user.mention()},\n\nɪ ᴀᴍ [{dispatcher.bot.first_name}](t.me/{dispatcher.bot.username})**
 
-**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ImRishmika](t.me/ImRishmika)
+**» ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [stupid](t.me/xtelr)
 **» ᴩʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **» ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}` 
 **» ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}` 
