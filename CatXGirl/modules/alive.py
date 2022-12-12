@@ -11,15 +11,15 @@ from CatXGirl import telethn as tbot, SUPPORT_CHAT, OWNER_USERNAME, dispatcher
 
 
 PHOTO = [
-    "https://telegra.ph/file/e92d6e9307c341661a50a.jpg",
-    "https://telegra.ph/file/e92d6e9307c341661a50a.jpg",
+    "https://graph.org/file/15eef9418be9b9011c0ec.jpg",
+    "https://graph.org/file/15eef9418be9b9011c0ec.jpg",
 ]
 
 
 @register(pattern=("/alive"))
 async def awake(event):
     TEXT = f"**ʜᴇʏ [{event.sender.first_name}](tg://user?id={event.sender.id}),\n\nɪ ᴀᴍ CatXGirl**\n━━━━━━━━━━━━━━━━━━━\n\n"
-    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [ImRishmika](https://t.me/ImRishmika) | [Malith](t.me/xMalith)** \n\n"
+    TEXT += f"» **ᴍʏ ᴅᴇᴠᴇʟᴏᴘᴇʀ : [kontol](https://t.me/xtelr) | [stupid](t.me/xdoct)** \n\n"
     TEXT += f"» **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
     TEXT += f"» **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
     TEXT += f"» **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n━━━━━━━━━━━━━━━━━\n\n"
