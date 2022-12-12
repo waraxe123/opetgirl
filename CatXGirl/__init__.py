@@ -3,7 +3,7 @@ import os
 import sys
 import time 
 
-import from CatXGirl
+from CatXGirl
 import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
