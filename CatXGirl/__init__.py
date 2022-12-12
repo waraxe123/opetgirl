@@ -1,8 +1,9 @@
 import logging
 import os
 import sys
-import time
+import time 
 
+from CatXGirl.config import Development as Config
 import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
