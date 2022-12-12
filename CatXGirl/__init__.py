@@ -99,7 +99,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from CatXGirl
+    
 
     TOKEN = Config.TOKEN
 
