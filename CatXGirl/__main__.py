@@ -27,8 +27,8 @@ from telegram.ext.dispatcher import DispatcherHandlerStop, run_async
 from telegram.utils.helpers import escape_markdown
 from telethon import __version__ as tlhver
 
-import FallenRobot.modules.sql.users_sql as sql
-from FallenRobot import (
+import CatXGirl.modules.sql.users_sql as sql
+from CatXGirl import (
     BOT_NAME,
     BOT_USERNAME,
     CERT_PATH,
@@ -50,9 +50,9 @@ from FallenRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from FallenRobot.modules import ALL_MODULES
-from FallenRobot.modules.helper_funcs.chat_status import is_user_admin
-from FallenRobot.modules.helper_funcs.misc import paginate_modules
+from CatXGirl.modules import ALL_MODULES
+from CatXGirl.modules.helper_funcs.chat_status import is_user_admin
+from CatXGirl.modules.helper_funcs.misc import paginate_modules
 
 
 def get_readable_time(seconds: int) -> str:
