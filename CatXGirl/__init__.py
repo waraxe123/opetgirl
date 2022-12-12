@@ -3,7 +3,7 @@ import os
 import sys
 import time 
 
-from CatXGirl
+
 import telegram.ext as tg
 from aiohttp import ClientSession
 from pyrogram import Client, errors
@@ -99,7 +99,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from CatXGirl.config import Development as Config
+    from CatXGirl
 
     TOKEN = Config.TOKEN
 
